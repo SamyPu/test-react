@@ -3,10 +3,10 @@ import ItemPlop from './components/itemPlop';
 import SuperCard from './components/super-card';
 import icon1 from "./img/icon-work.svg"
 import icon2 from "./img/icon-play.svg"
-import icon3 from "bg-color-study"
-import icon4 from "bg-color-exercise"
-import icon5 from "bg-color-social"
-import icon6 from "bg-color-self-care"
+import icon3 from "./img/icon-study.svg"
+import icon4 from "./img/icon-exercise.svg"
+import icon5 from "./img/icon-social.svg"
+import icon6 from "./img/icon-self-care.svg"
 
 class App extends React.Component {
 
@@ -20,8 +20,8 @@ class App extends React.Component {
 
   render() {
     const customData = require('./data.json');
-    // const customColor = ["bg-color-work","bg-color-play","bg-color-study","bg-color-exercise","bg-color-social","bg-color-self-care"]
-    // const customIcon = [icon1,icon2,icon3,icon4,icon5,icon6]
+    const customColor = ["bg-color-work","bg-color-play","bg-color-study","bg-color-exercise","bg-color-social","bg-color-self-care"]
+    const customIcon = [icon1,icon2,icon3,icon4,icon5,icon6]
 
     return (
       <div className="container d-flex align-items-center my-3 my-lg-5">
@@ -31,7 +31,7 @@ class App extends React.Component {
           </div>
           <div className=" col-12 col-sm-8 col-lg-9">
             <div className="row"> 
-              {/* {customData.map((element,index) =>
+              {customData.map((element,index) =>
                 <div className="col-12 col-sm-6 col-lg-4">
                   <ItemPlop 
                     bgcolor={customColor[index]}
@@ -41,7 +41,7 @@ class App extends React.Component {
                     week={element.timeframes[this.state.time].previous} 
                   />
                 </div>
-              )} */}
+              )}
             </div>
           </div>
         </div>
