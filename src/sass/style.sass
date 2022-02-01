@@ -1,0 +1,72 @@
+@import "./_variable"
+@import "./_fonts"
+
+// All ---------------------------------------------------------------
+*
+    font-family: 'Rubik-Medium'
+// p
+//     color: white
+
+// SuperCard ---------------------------------------------------------
+.superCard
+    background-color: hsl(235, 46%, 20%)
+    height: 100%
+    span
+        font-size: 13px
+        color: white
+        font-family: 'Rubik-Light'  
+    h1
+        font-size: 40px
+        color: white
+        font-family: 'Rubik-Light'
+    p
+        font-family: 'Rubik-Light'
+        color: hsl(235, 45%, 61%)
+        max-width: fit-content
+        &:hover
+            color: white
+    .bg-blue
+        background-color: hsl(246, 80%, 60%)
+    .img-container
+        width: 60px
+        img
+            max-width: 100%
+@media screen and (max-width: 640px) 
+  h1
+      font-size: 22px !important
+// ItemPLop ----------------------------------------------------------
+.itemPlop
+    h2
+        font-size: 16px
+        color: white
+    h3
+        font-size: 50px
+        font-family: 'Rubik-Light'
+        color: white
+        margin: 0px !important
+    span
+        font-size: 13px
+        font-family: 'Rubik-Light'
+        color: hsl(235, 45%, 61%)
+.itemPlop-container
+    overflow: hidden
+    img
+        top: -5px
+        right: 15px
+.bg-color-work
+    background-color: hsl(15, 100%, 70%)
+.bg-color-play
+    background-color: hsl(195, 74%, 62%)
+.bg-color-study
+    background-color: hsl(348, 100%, 68%)
+.bg-color-exercise
+    background-color: hsl(145, 58%, 55%)
+.bg-color-social
+    background-color: hsl(264, 64%, 52%)
+.bg-color-self-care
+    background-color: hsl(43, 84%, 65%)
+
+// Media -----------------------------------------------------------------
+@media screen and (max-width: 640px) 
+  h3
+      font-size: 30px !important
